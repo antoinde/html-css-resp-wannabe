@@ -127,3 +127,56 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* BONUS */
+
+@media screen and (max-width: 1160px) {
+    
+    .container{
+        width: 100vw;
+    }
+}
+
+html { /* perchè il problema alla base è risolto e non serve a nulla la scrollbar in questo caso  */
+    overflow-x: hidden;
+ }
+
+ /* /BONUS */
+
+@media screen and (max-width: 768px) {
+
+    /* LAYOUT */
+    .container{
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* LAYOUT */
+    .row {
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    .lessons .col, .steps .col, .why-us .col-left, .why-us .col-right {
+        width: 100%;
+    }
+    
+    /* BACKGROUND changed and layout fixed */
+    section:nth-last-child(1), section:nth-last-child(2){
+        padding-bottom: 3rem;
+        margin-bottom: 0rem;
+    }
+
+    section:nth-last-child(1) {
+        background-color: #222222;
+        padding-top: 3rem;
+    }
+
+    section:nth-last-child(2) {
+        margin-top: 3rem;
+    }
+
+    
+}
